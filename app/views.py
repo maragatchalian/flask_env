@@ -62,7 +62,12 @@ def index():
                            title='Home',
                            user=user,
                            posts=posts)
-    
+
 @lm.user_loader
 def load_user(id):
     return User.query.get(int(id))
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('index'))
