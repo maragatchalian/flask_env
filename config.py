@@ -13,3 +13,13 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
 SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
+
+
+# mail server settings
+MAIL_SERVER = 'localhost'#smtp.mail.yahoo.com'
+MAIL_PORT = 2525
+MAIL_USERNAME = None #os.environ.get('MAIL_USERNAME')
+MAIL_PASSWORD = None #os.environ.get('MAIL_PASSWORD')
+
+# administrator list
+ADMINS = ['marsgatchalian@yahoo.com']
