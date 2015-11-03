@@ -27,13 +27,16 @@ def after_login(resp):
         flash('Invalid login. Please try again.')
         return redirect(url_for('login'))
     user = User.query.filter_by(email=resp.email).first()
+   
     if user is None:
         nickname = resp.nickname
         if nickname is None or nickname == "":
             nickname = resp.email.split('@')[0]
-        user = User(nickname=nickname, email=resp.email)
+        nickname = User.make_unique_nickname(nickname) #added
+        user = User(nickname = nickname, email = resp.email)
         db.session.add(user)
         db.session.commit()
+
     remember_me = False
     if 'remember_me' in session:
         remember_me = session['remember_me']
@@ -96,7 +99,8 @@ def user(nickname):
 @app.route('/edit', methods=['GET', 'POST'])
 @login_required
 def edit():
-    form = EditForm()
+    #form = EditForm() - Old
+    form = EditForm(g.user.nickname)
     if form.validate_on_submit():
         g.user.nickname = form.nickname.data
         g.user.about_me = form.about_me.data
