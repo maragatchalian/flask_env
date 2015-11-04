@@ -24,6 +24,7 @@
   </form>
   <!-- posts is a Paginate object -->
   {% for post in posts.items %}
+    {% include 'post.html' %}
   <p>
     {{ post.author.nickname }} says: <b>{{ post.body }}</b>
   </p>
