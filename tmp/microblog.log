@@ -487,3 +487,174 @@ NameError: global name 'page' is not defined
 2015-11-04 15:29:47,780 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
 2015-11-04 15:35:19,058 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
 2015-11-04 16:05:33,226 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-04 16:09:17,855 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-04 16:11:17,581 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-04 16:11:20,852 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 106, in user
+    posts=posts)
+UnboundLocalError: local variable 'posts' referenced before assignment
+2015-11-04 16:12:50,468 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-04 16:13:05,591 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-04 16:14:31,956 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-04 16:16:17,401 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-04 16:16:20,466 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 102, in user
+    posts=posts)
+UnboundLocalError: local variable 'posts' referenced before assignment
+2015-11-04 16:16:47,299 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-04 16:18:56,322 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-04 16:19:00,078 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 101, in user
+    posts=posts)
+UnboundLocalError: local variable 'posts' referenced before assignment
+2015-11-04 16:19:09,546 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 101, in user
+    posts=posts)
+UnboundLocalError: local variable 'posts' referenced before assignment
+2015-11-04 16:20:02,962 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-04 16:20:13,456 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 101, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/microblog/app/templates/user.html", line 26, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2015-11-04 16:20:15,763 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 101, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/microblog/app/templates/user.html", line 26, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2015-11-04 16:20:30,094 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 101, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/microblog/app/templates/user.html", line 26, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2015-11-04 16:22:06,453 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
