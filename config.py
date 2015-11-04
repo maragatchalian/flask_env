@@ -23,3 +23,7 @@ MAIL_PASSWORD = None #os.environ.get('MAIL_PASSWORD')
 
 # administrator list
 ADMINS = ['marsgatchalian@yahoo.com']
+
+# pagination
+#FIRST_PAGE = 1
+POSTS_PER_PAGE = 3

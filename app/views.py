@@ -5,6 +5,7 @@ from app import app, db, lm, oid
 from forms import LoginForm, EditForm, PostForm
 from models import User, Post
 from datetime import datetime
+from config import POSTS_PER_PAGE
 
 # index view function suppressed for brevity
 @app.route('/login', methods=['GET', 'POST'])
@@ -56,30 +57,11 @@ def before_request():
         db.session.add(g.user)
         db.session.commit()
 
-#@app.route('/')
-#@app.route('/index')
-#@login_required
-#def index():
-#    user = g.user
-#    posts = [
-#        { 
-#            'author': {'nickname': 'John'}, 
-#            'body': 'Beautiful day in Portland!' 
-#        },
-#        { 
-#            'author': {'nickname': 'Susan'}, 
-#            'body': 'The Avengers movie was so cool!' 
-#        }
-#    ]
-#    return render_template('index.html',
-#                           title='Home',
-#                           user=user,
-#                           posts=posts)
-
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
+@app.route('/index/<int:page>', methods=['GET', 'POST'])
 @login_required
-def index():
+def index(page=1):
     form = PostForm()
     if form.validate_on_submit():
         post = Post(body=form.post.data, timestamp=datetime.utcnow(), author=g.user)
@@ -88,8 +70,9 @@ def index():
         flash('Your post is now live!')
         return redirect(url_for('index'))
     
-    posts = g.user.followed_posts().all()
-    
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False).items
+    #posts = g.user.followed_posts().paginate(1, 4, False).items
+
     return render_template('index.html',
                            title='Home',
                            form=form,
