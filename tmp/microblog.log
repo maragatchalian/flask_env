@@ -658,3 +658,9 @@ Traceback (most recent call last):
     {% for post in posts %}
 TypeError: 'Pagination' object is not iterable
 2015-11-04 16:22:06,453 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-05 10:09:11,318 INFO: microblog startup [in app/__init__.py:36]
+2015-11-05 10:09:20,670 INFO: microblog startup [in app/__init__.py:36]
+2015-11-05 10:09:50,454 INFO: microblog startup [in app/__init__.py:36]
+2015-11-05 10:10:40,159 INFO: microblog startup [in app/__init__.py:36]
+2015-11-05 10:14:14,538 INFO: microblog startup [in app/__init__.py:36]
+2015-11-05 10:19:58,789 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
