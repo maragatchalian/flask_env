@@ -7,6 +7,7 @@ from models import User, Post
 from datetime import datetime
 from config import POSTS_PER_PAGE, MAX_SEARCH_RESULTS
 from forms import SearchForm
+from .emails import follower_notification
 
 # index view function suppressed for brevity
 @app.route('/login', methods=['GET', 'POST'])
@@ -138,13 +139,18 @@ def follow(nickname):
     if user == g.user:
         flash('You can\'t follow yourself!')
         return redirect(url_for('user', nickname=nickname))
+    
     u = g.user.follow(user)
     if u is None:
         flash('Cannot follow ' + nickname + '.')
         return redirect(url_for('user', nickname=nickname))
     db.session.add(u)
     db.session.commit()
+    
     flash('You are now following ' + nickname + '!')
+    return redirect(url_for('user', nickname=nickname))
+
+    follower_notification(user, g.user)
     return redirect(url_for('user', nickname=nickname))
 
 @app.route('/unfollow/<nickname>')
