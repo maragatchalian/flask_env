@@ -667,3 +667,4 @@ TypeError: 'Pagination' object is not iterable
 2015-11-05 10:42:52,622 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
 2015-11-05 10:46:30,846 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
 2015-11-05 10:51:41,085 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
+2015-11-05 10:59:22,614 INFO: microblog startup [in /home/microblog/app/__init__.py:36]
