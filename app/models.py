@@ -1,5 +1,4 @@
-from app import db
-from app import app 
+from app import db, app 
 from hashlib import md5
 
 import sys
