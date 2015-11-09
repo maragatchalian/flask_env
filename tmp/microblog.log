@@ -695,3 +695,921 @@ TypeError: 'Pagination' object is not iterable
 2015-11-05 15:31:31,324 INFO: microblog startup [in app/__init__.py:38]
 2015-11-05 15:38:56,291 INFO: microblog startup [in app/__init__.py:38]
 2015-11-05 16:02:02,890 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 14:07:20,841 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 14:12:44,794 ERROR: Exception on /index [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 82, in index
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 30, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 14:12:46,986 ERROR: Exception on /index [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 82, in index
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 30, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 14:12:56,125 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 14:12:58,970 ERROR: Exception on /index [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 82, in index
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 30, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 14:13:26,089 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 14:13:34,482 ERROR: Exception on /index [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 82, in index
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 30, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 14:14:21,821 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 14:18:55,315 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 14:19:01,202 ERROR: Exception on /index [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 82, in index
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 27, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 14:21:07,143 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 14:21:14,298 ERROR: Exception on /index [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 82, in index
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 27, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 14:21:44,869 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 15:00:12,100 ERROR: Exception on /user/Mara Gatchalian/1 [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 28, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 15:00:56,385 ERROR: Exception on /user/Mara Gatchalian/1 [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 76, in template
+    {% block content %}{% endblock %}
+TemplateAssertionError: block 'content' defined twice
+2015-11-09 15:01:57,299 ERROR: Exception on /user/Mara Gatchalian/1 [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 66, in template
+    {% block content %}{% endblock %}
+TemplateAssertionError: block 'content' defined twice
+2015-11-09 15:02:05,458 ERROR: Exception on / [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 82, in index
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 66, in template
+    {% block content %}{% endblock %}
+TemplateAssertionError: block 'content' defined twice
+2015-11-09 15:31:40,939 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 30, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 15:32:38,387 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 30, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 15:42:16,809 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 30, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 15:44:05,224 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 30, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 15:44:10,825 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 15:44:13,591 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 30, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 15:48:20,431 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 40, in template
+    {% endif %}
+TemplateSyntaxError: Encountered unknown tag 'endif'.
+2015-11-09 15:48:27,635 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 15:49:52,215 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 15:52:31,039 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 15:53:58,777 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 36, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 15:55:33,209 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 37, in template
+    <form class="navbar-search pull-right"  action="{{ url_for('search') }}" method="post" name="search">{{ g.search_form.hidden_tag() }}{{ g.search_form.search(size=20),placeholder="Search",class="search-query") }}</form>
+TemplateSyntaxError: expected token 'end of print statement', got '='
+2015-11-09 15:56:13,820 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 37, in template
+    <form class="navbar-search pull-right"  action="{{ url_for('search') }}" method="post" name="search">{{ g.search_form.hidden_tag() }}{{ g.search_form.search(size=20), placeholder="Search",class="search-query") }}</form>
+TemplateSyntaxError: expected token 'end of print statement', got '='
+2015-11-09 15:56:25,828 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 46, in template
+    {% endif %}
+TemplateSyntaxError: Encountered unknown tag 'endif'.
+2015-11-09 15:57:37,708 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 36, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 15:57:44,497 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
+2015-11-09 15:57:46,206 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 36, in top-level template code
+    {% if g.user.is_authenticated() %}
+AttributeError: 'bool' object has no attribute '__call__'
+2015-11-09 15:58:25,716 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 40, in template
+    {% endif %}
+TemplateSyntaxError: Encountered unknown tag 'endif'.
+2015-11-09 15:59:24,213 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 69, in template
+    {% block content %}{% endblock %}
+TemplateAssertionError: block 'content' defined twice
+2015-11-09 16:00:27,775 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 69, in template
+    {% block content %}{% endblock %}
+TemplateAssertionError: block 'content' defined twice
+2015-11-09 16:05:33,226 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 38, in template
+    <form class="navbar-search pull-right" action="{{ url_for('search') }}" method="post" name="search">{{ g.search_form.hidden_tag() }}{{ g.search_form.search(size=20 }}</form>
+TemplateSyntaxError: unexpected '}', expected ')'
+2015-11-09 16:06:02,519 ERROR: Exception on /user/Mara Gatchalian [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 104, in user
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 38, in template
+    <form class="navbar-search pull-right" action="{{ url_for('search') }}" method="post" name="search">{{ g.search_form.hidden_tag() }}{{ g.search_form.search(size=20 }}</form>
+TemplateSyntaxError: unexpected '}', expected ')'
+2015-11-09 16:09:04,703 ERROR: Exception on /login [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_openid.py", line 500, in decorated
+    return f(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 25, in login
+    providers=app.config['OPENID_PROVIDERS'])
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/login.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 34, in top-level template code
+    <li> <form style="display: inline;" action="{{ url_for('search') }}" method="post" name="search">{{ g.search_form.hidden_tag() }}{{ g.search_form.search(size=20) }}<input type="submit" value="Search"></form>
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'flask.ctx._AppCtxGlobals object' has no attribute 'search_form'
+2015-11-09 16:09:13,573 ERROR: Exception on /login [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_openid.py", line 500, in decorated
+    return f(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 25, in login
+    providers=app.config['OPENID_PROVIDERS'])
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/login.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 34, in top-level template code
+    <li> <form style="display: inline;" action="{{ url_for('search') }}" method="post" name="search">{{ g.search_form.hidden_tag() }}{{ g.search_form.search(size=20) }}<input type="submit" value="Search"></form>
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'flask.ctx._AppCtxGlobals object' has no attribute 'search_form'
+2015-11-09 16:09:17,512 ERROR: Exception on /login [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_openid.py", line 500, in decorated
+    return f(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 25, in login
+    providers=app.config['OPENID_PROVIDERS'])
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/login.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/home/microblog/app/templates/base.html", line 34, in top-level template code
+    <li> <form style="display: inline;" action="{{ url_for('search') }}" method="post" name="search">{{ g.search_form.hidden_tag() }}{{ g.search_form.search(size=20) }}<input type="submit" value="Search"></form>
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'flask.ctx._AppCtxGlobals object' has no attribute 'search_form'
+2015-11-09 16:22:22,403 ERROR: Exception on /index [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 82, in index
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 63, in template
+    {% block content %}{% endblock %}
+TemplateAssertionError: block 'content' defined twice
+2015-11-09 16:23:04,129 ERROR: Exception on /index [GET] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 82, in index
+    posts=posts)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/app/templates/base.html", line 38, in template
+    {% endif %}
+TemplateSyntaxError: Encountered unknown tag 'endif'.
