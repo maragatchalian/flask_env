@@ -1613,3 +1613,4 @@ Traceback (most recent call last):
   File "/home/microblog/app/templates/base.html", line 38, in template
     {% endif %}
 TemplateSyntaxError: Encountered unknown tag 'endif'.
+2015-11-10 09:53:27,267 INFO: microblog startup [in /home/microblog/app/__init__.py:38]
