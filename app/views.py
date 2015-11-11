@@ -33,9 +33,6 @@ def login():
 
 @oid.after_login
 def after_login(resp):
-    #if resp.email is None or resp.email == "":
-    #    flash('Invalid login. Please try again.')
-    #    return redirect(url_for('login'))
     if resp.email is None or resp.email == "":
         flash(gettext('Invalid login. Please try again.'))
         redirect(url_for('login'))

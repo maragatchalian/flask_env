@@ -1717,3 +1717,239 @@ Traceback (most recent call last):
 UndefinedError: '_' is undefined
 2015-11-11 11:29:15,673 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
 2015-11-11 11:30:49,555 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 11:35:27,835 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 11:35:48,650 ERROR: Exception on /edit [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 124, in edit
+    if form.validate_on_submit():
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/microblog/app/forms.py", line 24, in validate
+    self.nickname.errors.append(gettext('This nickname has invalid characters. Please use letters, numbers, dots and underscores only.'))
+NameError: global name 'gettext' is not defined
+2015-11-11 11:39:21,668 ERROR: Exception on /edit [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 124, in edit
+    if form.validate_on_submit():
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/microblog/app/forms.py", line 24, in validate
+    self.nickname.errors.append(gettext('This nickname has invalid characters. Please use letters, numbers, dots and underscores only.'))
+NameError: global name 'gettext' is not defined
+2015-11-11 11:39:32,483 ERROR: Exception on /edit [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 124, in edit
+    if form.validate_on_submit():
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/microblog/app/forms.py", line 24, in validate
+    self.nickname.errors.append(gettext('This nickname has invalid characters. Please use letters, numbers, dots and underscores only.'))
+NameError: global name 'gettext' is not defined
+2015-11-11 11:40:19,385 ERROR: Exception on /edit [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 124, in edit
+    if form.validate_on_submit():
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/microblog/app/forms.py", line 24, in validate
+    if user != None:
+NameError: global name 'gettext' is not defined
+2015-11-11 11:40:30,647 ERROR: Exception on /edit [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 124, in edit
+    if form.validate_on_submit():
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/microblog/app/forms.py", line 24, in validate
+    if user != None:
+NameError: global name 'gettext' is not defined
+2015-11-11 11:43:18,311 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 11:44:14,366 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 11:44:30,758 ERROR: Exception on /edit [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 124, in edit
+    if form.validate_on_submit():
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/microblog/app/forms.py", line 24, in validate
+    self.nickname.errors.append(gettext('This nickname has invalid characters. Please use letters, numbers, dots and underscores only.'))
+NameError: global name 'gettext' is not defined
+2015-11-11 11:46:51,174 ERROR: Exception on /edit [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 124, in edit
+    if form.validate_on_submit():
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/microblog/app/forms.py", line 24, in validate
+    self.nickname.errors.append(gettext('This nickname has invalid characters. Please use letters, numbers, dots and underscores only.'))
+NameError: global name 'gettext' is not defined
+2015-11-11 11:47:03,621 ERROR: Exception on /edit [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 124, in edit
+    if form.validate_on_submit():
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/microblog/app/forms.py", line 24, in validate
+    self.nickname.errors.append(gettext('This nickname has invalid characters. Please use letters, numbers, dots and underscores only.'))
+NameError: global name 'gettext' is not defined
+2015-11-11 11:47:13,348 ERROR: Exception on /edit [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 124, in edit
+    if form.validate_on_submit():
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/microblog/app/forms.py", line 24, in validate
+    self.nickname.errors.append(gettext('This nickname has invalid characters. Please use letters, numbers, dots and underscores only.'))
+NameError: global name 'gettext' is not defined
+2015-11-11 11:47:43,195 ERROR: Exception on /edit [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 124, in edit
+    if form.validate_on_submit():
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/microblog/app/forms.py", line 24, in validate
+    self.nickname.errors.append(gettext('This nickname has invalid characters. Please use letters, numbers, dots and underscores only.'))
+NameError: global name 'gettext' is not defined
+2015-11-11 11:50:18,563 ERROR: Exception on /edit [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 124, in edit
+    if form.validate_on_submit():
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/microblog/app/forms.py", line 24, in validate
+    return True
+NameError: global name 'gettext' is not defined
+2015-11-11 11:55:15,742 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 11:55:50,824 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
