@@ -1954,3 +1954,197 @@ NameError: global name 'gettext' is not defined
 2015-11-11 11:55:15,742 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
 2015-11-11 11:55:50,824 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
 2015-11-11 12:26:48,198 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 14:01:29,870 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 14:38:09,001 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 14:42:29,991 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 14:42:45,592 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 14:46:56,975 ERROR: Exception on /index [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 80, in index
+    language = guessLanguage(form.post.data)
+NameError: global name 'guessLanguage' is not defined
+2015-11-11 14:47:06,911 ERROR: Exception on /index [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 80, in index
+    language = guessLanguage(form.post.data)
+NameError: global name 'guessLanguage' is not defined
+2015-11-11 14:47:17,466 ERROR: Exception on /index [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 80, in index
+    language = guessLanguage(form.post.data)
+NameError: global name 'guessLanguage' is not defined
+2015-11-11 14:48:44,476 ERROR: Exception on /index [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 80, in index
+    language = guessLanguage(form.post.data)
+NameError: global name 'guessLanguage' is not defined
+2015-11-11 14:48:51,231 ERROR: Exception on /index [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 80, in index
+    language = guessLanguage(form.post.data)
+NameError: global name 'guessLanguage' is not defined
+2015-11-11 14:49:33,586 ERROR: Exception on /index [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 80, in index
+    language = guessLanguage(form.post.data)
+NameError: global name 'guessLanguage' is not defined
+2015-11-11 14:49:47,688 ERROR: Exception on /index [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 80, in index
+    language = guessLanguage(form.post.data)
+NameError: global name 'guessLanguage' is not defined
+2015-11-11 14:50:37,084 ERROR: Exception on /index [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 80, in index
+    language = guessLanguage(form.post.data)
+NameError: global name 'guessLanguage' is not defined
+2015-11-11 14:52:19,466 ERROR: Exception on /index [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 80, in index
+    language = guessLanguage(form.post.data)
+NameError: global name 'guessLanguage' is not defined
+2015-11-11 14:53:32,127 ERROR: Exception on /index [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 80, in index
+    if form.validate_on_submit():
+NameError: global name 'guessLanguage' is not defined
+2015-11-11 14:54:18,432 ERROR: Exception on /index [POST] [in /home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/microblog/flask/local/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/microblog/app/views.py", line 80, in index
+    if form.validate_on_submit():
+NameError: global name 'guessLanguage' is not defined
+2015-11-11 15:05:42,034 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 15:34:24,012 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 15:34:52,677 INFO: microblog startup [in app/__init__.py:42]
