@@ -1953,3 +1953,4 @@ Traceback (most recent call last):
 NameError: global name 'gettext' is not defined
 2015-11-11 11:55:15,742 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
 2015-11-11 11:55:50,824 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-11 12:26:48,198 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
