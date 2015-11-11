@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 WTF_CSRF_ENABLED = True
 SECRET_KEY = 'you-will-never-guess'
 
@@ -33,3 +36,10 @@ POSTS_PER_PAGE = 3
 #Search
 WHOOSH_BASE = os.path.join(basedir, 'search.db')
 MAX_SEARCH_RESULTS = 50
+
+# ...
+# available languages
+LANGUAGES = {
+    'en': 'English',
+    'es': 'Español'
+}

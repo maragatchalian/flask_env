@@ -8,6 +8,13 @@ from datetime import datetime
 from config import POSTS_PER_PAGE, MAX_SEARCH_RESULTS
 from forms import SearchForm
 from .emails import follower_notification
+from app import babel
+from config import LANGUAGES
+from flask.ext.babel import gettext
+
+@babel.localeselector
+def get_locale():
+    return request.accept_languages.best_match(LANGUAGES.keys())
 
 # index view function suppressed for brevity
 @app.route('/login', methods=['GET', 'POST'])
@@ -26,17 +33,23 @@ def login():
 
 @oid.after_login
 def after_login(resp):
+    #if resp.email is None or resp.email == "":
+    #    flash('Invalid login. Please try again.')
+    #    return redirect(url_for('login'))
     if resp.email is None or resp.email == "":
-        flash('Invalid login. Please try again.')
-        return redirect(url_for('login'))
+        flash(gettext('Invalid login. Please try again.'))
+        redirect(url_for('login'))
+
     user = User.query.filter_by(email=resp.email).first()
    
     if user is None:
         nickname = resp.nickname
         if nickname is None or nickname == "":
             nickname = resp.email.split('@')[0]
+        nickname = User.make_valid_nickname(nickname) #added
         nickname = User.make_unique_nickname(nickname) #added
         user = User(nickname = nickname, email = resp.email)
+        
         db.session.add(user)
         db.session.commit()
 
