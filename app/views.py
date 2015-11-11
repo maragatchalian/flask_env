@@ -14,7 +14,7 @@ from flask.ext.babel import gettext
 
 @babel.localeselector
 def get_locale():
-    return request.accept_languages.best_match(LANGUAGES.keys())
+    return 'es' #request.accept_languages.best_match(LANGUAGES.keys())
 
 # index view function suppressed for brevity
 @app.route('/login', methods=['GET', 'POST'])
