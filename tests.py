@@ -6,6 +6,7 @@ from config import basedir
 from app import app, db
 from app.models import User, Post
 from datetime import datetime, timedelta
+from app.translate import microsoft_translate
 
 class TestCase(unittest.TestCase):
     def setUp(self):
@@ -37,6 +38,10 @@ class TestCase(unittest.TestCase):
         nickname2 = User.make_unique_nickname('john')
         assert nickname2 != 'john'
         assert nickname2 != nickname
+
+    def test_translation(self):
+        assert microsoft_translate(u'English', 'en', 'es') == u'Inglés'
+        assert microsoft_translate(u'Español', 'es', 'en') == u'Spanish'
 
     def test_follow(self):
         # make four users
