@@ -14,6 +14,8 @@ from flask.ext.babel import gettext
 from guess_language import guessLanguage
 from flask import jsonify
 from .translate import microsoft_translate
+from flask.ext.sqlalchemy import get_debug_queries
+from config import DATABASE_QUERY_TIMEOUT
 
 @babel.localeselector
 def get_locale():

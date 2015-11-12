@@ -2154,3 +2154,4 @@ NameError: global name 'guessLanguage' is not defined
 2015-11-12 12:26:02,366 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
 2015-11-12 12:30:51,995 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
 2015-11-12 12:30:52,766 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-12 13:51:27,192 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
