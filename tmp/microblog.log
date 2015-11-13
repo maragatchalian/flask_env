@@ -2155,6 +2155,7 @@ NameError: global name 'guessLanguage' is not defined
 2015-11-12 12:30:51,995 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
 2015-11-12 12:30:52,766 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
 <<<<<<< HEAD
+<<<<<<< HEAD
 2015-11-12 13:51:27,192 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
 2015-11-12 15:29:01,254 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
 2015-11-12 15:29:01,262 INFO: microblog startup [in /home/microblog/app/__init__.py:52]
@@ -2170,3 +2171,11 @@ NameError: global name 'guessLanguage' is not defined
 2015-11-13 12:17:46,726 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
 2015-11-13 12:17:46,734 INFO: microblog startup [in /home/microblog/app/__init__.py:52]
 2015-11-13 12:17:46,734 INFO: microblog startup [in /home/microblog/app/__init__.py:52]
+=======
+>>>>>>> parent of 41b9beb... Database Performance
+2015-11-13 13:57:57,839 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-13 13:57:57,844 INFO: microblog startup [in /home/microblog/app/__init__.py:52]
+2015-11-13 13:57:57,844 INFO: microblog startup [in /home/microblog/app/__init__.py:52]
+2015-11-13 13:58:05,574 INFO: microblog startup [in /home/microblog/app/__init__.py:42]
+2015-11-13 13:58:05,574 INFO: microblog startup [in /home/microblog/app/__init__.py:52]
+2015-11-13 13:58:05,574 INFO: microblog startup [in /home/microblog/app/__init__.py:52]
