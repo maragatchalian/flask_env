@@ -1,6 +1,7 @@
 from app import db, app 
 from hashlib import md5
 import re
+from config import WHOOSH_ENABLED
 
 
 import sys
@@ -96,5 +97,9 @@ class Post(db.Model):
     def __repr__(self):
         return '<Post %r>' % (self.body)
 
+enable_search = WHOOSH_ENABLED
+if enable_search:
+    import flask.ext.whooshalchemy as whooshalchemy
+    
 if enable_search:
     whooshalchemy.whoosh_index(app, Post)
